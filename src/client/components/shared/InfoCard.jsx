@@ -39,7 +39,7 @@ export default function InfoCard({ data }) {
       </CardContent>
       <CardActions disableSpacing style={{ justifyContent: "center" }}>
         <Button variant="contained" onClick={() => {}}>
-          Read more
+          LAES MERE
         </Button>
       </CardActions>
     </Card>
