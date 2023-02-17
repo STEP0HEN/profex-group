@@ -2,7 +2,7 @@
   "name": "profex-group",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://profexgroup.dk/",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +12,8 @@
     "react-router": "^6.4.1",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "react-simple-snackbar": "^1.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",

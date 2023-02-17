@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
+import "../InfoCard/InfoCard.css";
 
 export default function InfoCard({ data }) {
   const [expanded, setExpanded] = React.useState(false);
@@ -14,8 +15,8 @@ export default function InfoCard({ data }) {
 
   return (
     <Card
+      className="text-something"
       sx={{
-        flex: "0 0 calc((33.333333% - 2em))",
         marginTop: "2em",
         display: "flex",
         flexDirection: "column",
@@ -27,7 +28,7 @@ export default function InfoCard({ data }) {
         height="194"
         image={
           data?.img ||
-          `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fshop.cavendishmenswear.com%2Fwp-content%2Fuploads%2F2020%2F11%2FIMG_1117.jpg&f=1&nofb=1&ipt=5bdbc4ffe6be6e06d90b40915afab2b8c1c3b3ffb23fc0d273e48235f6fece56&ipo=images`
+          `https://gumiimpex.hr/upload/rotator_element/webpnet-resizeimage-7-5dd01011ad3b4_5de59991b1cc9.jpg`
         }
         alt={data?.title + " " + "billede"}
       />
@@ -38,9 +39,9 @@ export default function InfoCard({ data }) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing style={{ justifyContent: "center" }}>
-        <Button variant="contained" onClick={() => {}}>
+        {/* <Button variant="contained" onClick={() => {}}>
           LAES MERE
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   );

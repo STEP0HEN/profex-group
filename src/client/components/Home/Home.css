@@ -1,0 +1,66 @@
+/* .banner-text {
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} */
+
+  .banner-text {
+      /* transform: scale(1.3); */
+      /* animation: pic 1s; */
+      animation-fill-mode: forwards;
+      transform: scaleX(1);
+      transform-origin: 50% 100%;
+      animation: overlay 2s;
+}
+
+  /* Using this for all animations */
+  /* @keyframes pic {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    51% { opacity: 1; }
+    100% { opacity: 1; transform: scale(1); }
+  } */
+   
+  @keyframes overlay {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 50%;
+    }
+    50% {
+      transform: scaleX(1);
+      transform-origin: 0% 50%;
+    }
+    51% {
+      transform: scaleX(1);
+      transform-origin: 100% 50%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 100% 50%;
+    }
+  }
+  
+   .footer-section{
+    background-color: navajowhite;
+}
+@media screen and (min-width: 800px) {
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
